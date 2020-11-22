@@ -479,3 +479,12 @@ html {
   font-size: 6rem;
   font-weight: 700;
 }
+
+
+.border-green {
+  border: 2px solid var(--green);
+}
+
+.border-red {
+  border: 2px solid var(--red);
+}
