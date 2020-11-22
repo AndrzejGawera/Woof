@@ -74,6 +74,7 @@ html {
 
 /*  Header  */
 .site-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 5rem;
@@ -159,4 +160,152 @@ html {
 .footer__input:focus {
   outline: none;
   background-color: var(--white);
+}
+
+
+
+/* Additional text classes */
+.txt-l {
+  text-align: left;
+}
+.txt-c {
+  text-align: center;
+}
+.txt-r {
+  text-align: right;
+}
+.txt-light {
+  color: var(--grey198);
+}
+.txt-dark {
+  color: var(--grey51);
+}
+.txt-orange {
+  color: var(--orange);
+}
+.txt-newline::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.heading {
+  font-size: 14rem;
+  line-height: 9rem;
+  width: 70%;
+  text-transform: uppercase;
+}
+.heading-small {
+  font-size: 7rem;
+}
+.section-txt {
+  font-size: 2rem;
+  padding: 2rem 0;
+  width: 30%;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 16rem;
+  height: 4rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  color: var(--grey77);
+  font-size: 2rem;
+}
+
+
+
+
+/* Section we love */
+.welove {
+  background: url(/images/welove.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+
+
+
+/* Section food  */
+.food {
+  background: url(/images/white-dog.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Section adopt */
+.adopt {
+  background: var(--grey51);
+  background-attachment: fixed;
+  width: 100%;
+  padding: 7% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adopt .heading {
+  font-size: 12rem;
+  width: 100%;
+}
+
+.adopt .section-txt {
+  width: 60%;
+}
+
+.adopt__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.list__box {
+  width: 20rem;
+}
+
+.list__box:hover .list__image {
+  transform: scale(1.1);
+}
+
+.list__image-overflow {
+  border: none;
+  border-radius: 3rem 0 3rem 0;
+  overflow: hidden;
+}
+
+.list__image {
+  display: block;
+  width: 100%;
+  transition: all .33s ease-in-out;
+}
+
+.list__dog-name {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--orange);
+  padding-top: .5rem;
+}
+
+.list__dog-breed {
+  font-size: 1.5rem;
+  color: var(--grey198);
 }
