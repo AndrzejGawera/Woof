@@ -53,7 +53,7 @@ table {
 :root {
   --grey51: rgba(51, 51, 51, 1);
   --grey77: rgba(77, 77, 77, 1);
-  --grey77: rgba(198, 198, 198, 1);
+  --grey198: rgba(198, 198, 198, 1);
   --white: rgba(255, 255, 255, 1);
   --red: rgba(255, 0, 0, 1);
   --green: rgba(0, 255, 0, 1);
@@ -66,7 +66,97 @@ table {
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: 'Titillium Web', sans-serif;
   font-size: var(--font-base);
+}
+
+
+/*  Header  */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: var(--grey51);
+}
+
+.site-header__logo {
+  height: 4.8rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__link {
+  display: block;
+  padding: 0 2rem;
+  height: 5rem;
+  font-size: 2rem;
+  line-height: 5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.nav__link:hover {
+  color: var(--orange);
+}
+
+
+/* Footer */
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 0;
+  background-color: var(--grey77);
+  color: white;
+  font-size: 1.7rem;
+}
+
+.footer__adress,
+.footer__about,
+.footer__nav,
+.footer__subscribe {
+  padding: 0 1.5rem;
+  min-width: 20%;
+}
+
+.footer__nav {
+  min-width: 10%;
+}
+
+.footer__title {
+  font-weight: 700;
+  padding-bottom: .5rem;
+  color: var(--orange);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer__link:hover {
+  color: var(--orange);
+}
+
+.footer__input {
+  display: block;
+  width: 80%;
+  height: 3rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--grey198);
+  color: var(--grey77);
+  font-size: 1.5rem;
+  padding: .75rem 1.2rem .75rem;
+}
+
+.footer__input:focus {
+  outline: none;
+  background-color: var(--white);
 }
