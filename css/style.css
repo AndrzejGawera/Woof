@@ -275,12 +275,15 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 75%;
   padding: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .list__box {
   width: 20rem;
+  flex-shrink: 0;
+  margin-top: 2rem;
 }
 
 .list__box:hover .list__image {
@@ -346,9 +349,9 @@ html {
 .form__input {
   display: block;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   background-color: var(--grey198);
   color: var(--grey77);
   font-size: 1.5rem;
@@ -384,4 +387,95 @@ html {
 
 .form__submit:disabled {
   background-color: var(--grey198);
+}
+
+
+/* Food subpage */
+.food__sub {
+  background: url(/images/dry-food.jpg) center/cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.blackout {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(rgba(77, 77, 77, 0),rgba(77, 77, 77, 1));
+  mix-blend-mode: multiply;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+.food__sub .heading {
+  z-index: 2;
+}
+
+.food__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  background-color: var(--grey198);
+}
+
+.food__list-box {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: none;
+  border-radius: 2rem 2rem 2rem 2rem;
+  background-color: var(--grey51);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.food__list-image-box {
+  width: 20%;
+}
+
+.food__list-image {
+  display: block;
+  height: 18rem;
+  margin:  0 auto;
+}
+
+.food__list-desc-box {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.food__list-desc {
+  color: var(--grey198);
+  font-size: 1.8rem;
+}
+
+.food__list-desc-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--orange);
+  padding: 1.5rem 0;
+}
+
+.food__list-buy-box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.food__list-price {
+  font-size: 6rem;
+  font-weight: 700;
 }
